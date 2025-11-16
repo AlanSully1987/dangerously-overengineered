@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Inside the Power Spine of a Modern Data Centre</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; line-height: 1.6; }
+  .container { max-width: 900px; margin: 40px auto; background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.08); }
+  h1, h2 { margin-top: 0; }
+  header { text-align: center; padding: 20px; }
+  a { color: #0077cc; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { margin-left: 20px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⚡ Inside the Power Spine of a Modern Data Centre — And the Hidden Fire Hazards Nobody Talks About</h1>
+  <p>By Alan O'Sullivan</p>
+</header>
+
+<div class="container">
+
+<p>Walk into any data centre and you’ll see impressive cooling systems, endless rows of servers, and enough blinking LEDs to light up a small town. But behind all that is something far more important — power.</p>
+
+<p>And not just “a power supply.” I mean a carefully engineered lineup of electrical systems working together 24/7 so the facility never experiences a dip, a flicker, or even a millisecond of uncertainty.</p>
+
+<p>The irony? The very systems designed to guarantee uptime are also some of the biggest fire risks on the whole campus.</p>
+
+<p>Let’s break it down in simple terms — the power flow, what each piece does, and what can go wrong if it turns into a bad day.</p>
+
+<hr>
+
+<h2>🔌 1. The Power Pathway — What Actually Happens Before a Server Gets a Single Watt</h2>
+
+<p>Most people think servers are fed directly from the grid. That couldn’t be further from the truth.</p>
+
+<p>In reality, power travels a long and very controlled journey:</p>
+
+<p><strong>Grid → MV Switchgear → Transformers → LV Switchgear → UPS → PDUs → Server Racks</strong></p>
+
+<p>The UPS sits smack in the middle, constantly smoothing everything out.</p>
+
+<p>And when the grid fails? The transfer is immediate:</p>
+
+<ul>
+  <li>The UPS jumps in instantly</li>
+  <li>The batteries carry the load</li>
+  <li>Generators fire up</li>
+  <li>Power transfers smoothly</li>
+  <li>Servers don’t even notice</li>
+</ul>
+
+<p>This layered system — grid, UPS/batteries, generators — is why high-tier data centres never blink during a storm or utility outage.</p>
+
+<hr>
+
+<h2>🔥 2. Transformers — Big, Heavy, and Capable of Causing a Very Bad Day</h2>
+
+<p>Transformers are quiet giants. Hundreds to thousands of litres of oil, metal coils under huge stress, and voltages that don’t forgive mistakes.</p>
+
+<p><strong>What’s actually in there?</strong></p>
+<ul>
+  <li>Oil (lots of it)</li>
+  <li>Copper windings</li>
+  <li>Polymer insulation</li>
+  <li>High-voltage connections</li>
+</ul>
+
+<p><strong>What can go wrong?</strong></p>
+<ul>
+  <li>Internal arcing</li>
+  <li>Oil spray under pressure</li>
+  <li>Pool fires if the tank ruptures</li>
+  <li>Cable insulation ignition</li>
+</ul>
+
+<p>Transformers don’t go wrong often — but when they do, they do it aggressively.</p>
+
+<hr>
+
+<h2>⚡ 3. Electrical Rooms — The Places Where All the Real Work Happens</h2>
+
+<p>These are the rooms most people walk past without a second glance. Inside them sits the switchgear that actually controls the entire data centre.</p>
+
+<p><strong>Packed inside you’ve got:</strong></p>
+<ul>
+  <li>Mountains of insulated cable</li>
+  <li>Switchboards</li>
+  <li>Protection relays</li>
+  <li>Busbars</li>
+  <li>Terminations everywhere</li>
+</ul>
+
+<p><strong>Risks? Quite a lot:</strong></p>
+<ul>
+  <li>Internal arc flash events</li>
+  <li>Loose connections cooking themselves to ignition</li>
+  <li>Tracking across dust or humidity</li>
+  <li>Cable trays catching fire</li>
+</ul>
+
+<p>Electrical rooms feel clinical and tidy, but they're some of the most unforgiving spaces when something is even slightly out of place.</p>
+
+<hr>
+
+<h2>🔋 4. UPS Rooms — The Heart of Continuity</h2>
+
+<p>The UPS is the unsung hero. It doesn’t just “stay ready.” It actively conditions and stabilises the power every second of every day. And when the grid fails, the UPS is the thing that saves everything from crashing.</p>
+
+<p><strong>What’s inside a UPS room?</strong></p>
+<ul>
+  <li>Power modules running hot</li>
+  <li>IGBTs, transformers, inverter stages</li>
+  <li>Plastic housings</li>
+  <li>Fans, cooling ducts, control boards</li>
+  <li>A surprising amount of cabling</li>
+</ul>
+
+<p><strong>Things that can ignite:</strong></p>
+<ul>
+  <li>Overheated electronic components</li>
+  <li>DC-side arcing</li>
+  <li>Internal wiring faults</li>
+  <li>Plastic housings melting/igniting</li>
+</ul>
+
+<p>UPS rooms run under constant thermal and electrical stress — they’re brilliant systems, but absolutely not benign.</p>
+
+<hr>
+
+<h2>🔋 5. Battery Rooms — A Lot of Energy in a Small Space</h2>
+
+<p>This is where the stored power lives. And depending on the chemistry, the risk profile changes completely.</p>
+
+<h3>Lead-Acid Rooms</h3>
+<p>Reliable, but have their own quirks:</p>
+<ul>
+  <li>Hydrogen generation</li>
+  <li>Ignition from sparks</li>
+  <li>Thermal build-up</li>
+  <li>High-current DC arcs</li>
+  <li>Plastic cases that will burn nicely if they’re given the chance</li>
+</ul>
+
+<h3>Lithium-Ion Rooms or Li-ion Distributed Units</h3>
+<p>Different league entirely:</p>
+<ul>
+  <li>Thermal runaway</li>
+  <li>Jet-flame behaviour</li>
+  <li>Gas venting</li>
+  <li>Fire propagation between cells</li>
+  <li>Re-ignition risk even after initial suppression</li>
+</ul>
+
+<p>Battery rooms are among the most misunderstood fire hazards in the entire data centre ecosystem.</p>
+
+<hr>
+
+<h2>🛢️ 6. Generators With Belly Tanks — Outside, But Still Capable of Causing Havoc</h2>
+
+<p>Generators usually sit outdoors in packaged enclosures — neat, tidy, self-contained. Underneath them are belly tanks full of diesel, and inside the enclosure are lube oils, insulation foam, hot surfaces, and high-current electrics.</p>
+
+<p><strong>What’s in the fire load?</strong></p>
+<ul>
+  <li>Diesel</li>
+  <li>Lube oil</li>
+  <li>Plastics and insulation</li>
+  <li>Hot exhaust components</li>
+  <li>Control wiring</li>
+</ul>
+
+<p><strong>What goes wrong?</strong></p>
+<ul>
+  <li>Diesel pool fires from tank or line leaks</li>
+  <li>Pressurised spray fires</li>
+  <li>Oil mist hitting hot components</li>
+  <li>Electrical faults inside control panels</li>
+</ul>
+
+<p>Generators are amazing power sources. They’re also a mixture of hot engines, fuel, oil, and electrics inside a small metal box — not exactly a quiet combination.</p>
+
+<hr>
+
+<h2>🔥 7. So What Does All This Mean?</h2>
+
+<p>Every part of the power chain is there to guarantee reliability, but each brings its own fire behaviour, failure modes, and hazards into the picture.</p>
+
+<p>Understanding these risks isn’t just academic — it’s essential for:</p>
+<ul>
+  <li>Designing safer power rooms</li>
+  <li>Planning equipment placement</li>
+  <li>Choosing the right protection strategy</li>
+  <li>Carrying out meaningful fire risk assessments</li>
+  <li>Communicating clearly with engineers, insurers, and operators</li>
+</ul>
+
+<p>If you appreciate the engineering behind a modern data centre, you quickly realise:</p>
+
+<p><strong>The infrastructure that keeps the building alive also holds the potential to cause the most severe fire events inside it.</strong></p>
+
+<p>Managing that duality is what makes data-centre fire engineering such a fascinating — and vital — discipline.</p>
+
+<p style="margin-top:40px;"><a href="index.html">← Back to Home</a></p>
+</div>
+
+</body>
+</html>
